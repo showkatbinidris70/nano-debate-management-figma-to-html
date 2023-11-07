@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=East+Sea+Dokdo&family=Love+Ya+Like+A+Sister&family=Poppins:wght@100;200;300;400;500;600;900&family=Trykker&display=swap"
+        rel="stylesheet">
+    <title>Perliament</title>
+    <style>
+        .all-parliament {
+            background-image: url("/assets/images/image-7.png");
+            min-height: 30rem;
+            background-size: cover;
+            background-repeat: no-repeat, repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .parliament-card {
+            /* margin-top: -4.7rem; */
+            border: 2px solid #3a0443 !important;
+            min-height: 30rem;
+            background: rgba(217, 217, 217, 0.6) !important;
+            box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+            padding-bottom: 1rem;
+        }
+
+        .parliament-leader-card {
+            /* margin-top: -4.7rem; */
+            border: 2px solid #07360c !important;
+            min-height: 30rem;
+            background: rgba(217, 217, 217, 0.6) !important;
+            box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+            padding-bottom: 1rem;
+        }
+
+        .opposition-leader-parliament-card {
+            /* margin-top: -4.7rem; */
+            border: 2px solid #a90202 !important;
+            min-height: 30rem;
+            background: rgba(217, 217, 217, 0.6) !important;
+            box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+            padding-bottom: 1rem;
+        }
+
+        .parliament-speaker {
+            color: #fff504;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #3a0443;
+            padding: 1rem;
+        }
+
+        .parliament-leaders {
+            color: #fff504;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #07360c;
+            padding: 1rem;
+        }
+
+        .parliament-opposition-leader {
+            color: #fff504 !important;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #a90202;
+            padding: 1.1rem;
+        }
+
+        .parliament-opposition-leader h4 {
+            color: #fff504 !important;
+        }
+
+        .name-and-image {
+            margin: 1rem;
+        }
+
+        .name-and-image img {
+            margin-left: 0rem;
+        }
+
+        .name-and-serial {
+            border: 2px solid #3a0443;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+        }
+
+        .leader-name-and-serial {
+            border: 2px solid #07360c;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+        }
+
+        .opposition-leader-name-and-serial {
+            border: 2px solid #a90202;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+        }
+
+        .name-and-serial h5 {
+            color: #10100f;
+            text-align: center;
+            font-family: Adamina;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0.8rem;
+            margin-left: 1rem !important;
+        }
+
+        .name-and-serial h6 {
+            color: #0e0e0d;
+            text-align: center;
+            font-family: Adamina;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .leader-name-and-serial h5 {
+            color: #10100f;
+            text-align: center;
+            font-family: Adamina;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0.8rem;
+            margin-left: 1rem !important;
+        }
+
+        .leader-name-and-serial h6 {
+            color: #0e0e0d;
+            text-align: center;
+            font-family: Adamina;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .opposition-leader-name-and-serial h5 {
+            color: #10100f;
+            text-align: center;
+            font-family: Adamina;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 0.8rem;
+            margin-left: 1rem !important;
+        }
+
+        .opposition-leader-name-and-serial h6 {
+            color: #0e0e0d;
+            text-align: center;
+            font-family: Adamina;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- parliament -->
+    <div class="all-parliament">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card parliament-card">
+                        <div class="parliament-speaker">
+                            <h5>Speakers of All Parliament</h5>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-23.svg" class="img-fluid" /></div>
+                            <div class="name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>11th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-23.svg" class="img-fluid" /></div>
+                            <div class="name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>10th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-23.svg" class="img-fluid" /></div>
+                            <div class="name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>9th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="text-center my-1"><a href=""><button class="btn"><i
+                                        class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card parliament-leader-card">
+                        <div class="parliament-leaders">
+                            <h5>Leaders of All Parliament</h5>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-24.svg" class="img-fluid" /></div>
+                            <div class="leader-name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>11th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-24.svg" class="img-fluid" /></div>
+                            <div class="leader-name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>10th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-24.svg" class="img-fluid" /></div>
+                            <div class="leader-name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>9th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="text-center my-1"><a href=""><button class="btn"><i
+                                        class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card opposition-leader-parliament-card">
+                        <div class="parliament-opposition-leader">
+                            <h5 class="">Opposition Leaders of All Parliament</h5>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-27.svg" class="img-fluid" /></div>
+                            <div class="opposition-leader-name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>11th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-27.svg" class="img-fluid" /></div>
+                            <div class="opposition-leader-name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>10th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-27.svg" class="img-fluid" /></div>
+                            <div class="opposition-leader-name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>9th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="text-center my-1"><a href=""><button class="btn"><i
+                                        class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

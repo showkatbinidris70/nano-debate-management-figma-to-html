@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=East+Sea+Dokdo&family=Love+Ya+Like+A+Sister&family=Poppins:wght@100;200;300;400;500;600;900&family=Trykker&display=swap"
+        rel="stylesheet">
+    <title>Perliament</title>
+    <style>
+        .all-parliament {
+            background-image: url("/assets/images/image-7.png");
+            min-height: 33rem;
+            background-size: cover;
+            background-repeat: no-repeat, repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .all-parliament-top-section {
+            height: 5rem;
+            background-color: #0D5B28;
+        }
+
+        .speaker-parliament-card {
+            margin-top: -4.1rem;
+            margin-bottom: 4.2rem;
+            border: 2px solid #3a0443 !important;
+            min-height: 30rem;
+            background: rgba(217, 217, 217, 0.6) !important;
+            box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .leaders-parliament-card {
+            margin-top: -4.1rem;
+            margin-bottom: 4.2rem;
+            border: 2px solid #07360C !important;
+            min-height: 30rem;
+            background: rgba(217, 217, 217, 0.6) !important;
+            box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .opposition-leader-card {
+            margin-top: -4.1rem;
+            margin-bottom: 4.2rem;
+            border: 2px solid #A90202 !important;
+            min-height: 30rem;
+            background: rgba(217, 217, 217, 0.6) !important;
+            box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .parliament-title {
+            color: #fff504;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #3a0443;
+            padding: 1rem;
+        }
+
+        .leader-parliament-title {
+            color: #fff504;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #07360C;
+            padding: 1rem;
+        }
+
+        .opposition-leader-title {
+            color: #fff504;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #A90202;
+            padding: 1rem;
+        }
+
+        .name-and-image {
+            margin: 1rem;
+        }
+
+        .name-and-image img {
+            margin-left: 0rem;
+            width: 100%;
+        }
+
+        .name-and-serial {
+            border: 2px solid #3a0443;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+            padding-top: 1rem;
+        }
+
+        .name-and-serial {
+            border: 2px solid #3a0443;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+            padding-top: 1rem;
+        }
+
+        .leader-name-and-serial {
+            border: 2px solid #3a0443;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+            padding-top: 1rem;
+        }
+
+        .opposition-leader-name-and-serial {
+            border: 2px solid #A90202;
+            border-radius: 5px;
+            border-left: none;
+            width: 100%;
+            margin-left: -3rem;
+            padding-top: 1rem;
+        }
+
+        .name-and-serial h5 {
+            color: #10100F;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 1rem;
+        }
+
+        .leader-name-and-serial h5 {
+            color: #10100F;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 1rem;
+        }
+
+        .opposition-leader-name-and-serial h5 {
+            color: #10100F;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-left: 1rem;
+        }
+
+        .name-and-serial h6 {
+            color: #0E0E0D;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .leader-name-and-serial h6 {
+            color: #0E0E0D;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .opposition-leader-name-and-serial h6 {
+            color: #0E0E0D;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- parliament -->
+    <div class="all-parliament">
+        <div class="all-parliament-top-section"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card speaker-parliament-card">
+                        <div class="parliament-title">
+                            <h5>Speakers of All Parliament</h5>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-23.svg" class="img-fluid" /></div>
+                            <div class="name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>11th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-23.svg" class="img-fluid" /></div>
+                            <div class="name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>10th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-23.svg" class="img-fluid" /></div>
+                            <div class="name-and-serial">
+                                <h5>Dr. Shirin Sharmin Chaudhury</h5>
+                                <h6>9th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="text-center pb-2"><a href=""><button class="btn"><i
+                                        class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card leaders-parliament-card">
+                        <div class="leader-parliament-title">
+                            <h5>Leaders of All Parliament</h5>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-24.svg" class="img-fluid" /></div>
+                            <div class="leader-name-and-serial">
+                                <h5>Sheikh Hasina</h5>
+                                <h6>11th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-24.svg" class="img-fluid" /></div>
+                            <div class="leader-name-and-serial">
+                                <h5>Sheikh Hasina</h5>
+                                <h6>10th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-24.svg" class="img-fluid" /></div>
+                            <div class="leader-name-and-serial">
+                                <h5>Sheikh Hasina</h5>
+                                <h6>9th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="text-center pb-2"><a href=""><button class="btn"><i
+                                        class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card opposition-leader-card">
+                        <div class="opposition-leader-title">
+                            <h5>Opposition Leaders of All Parliament</h5>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-27.svg" class="img-fluid" /></div>
+                            <div class="opposition-leader-name-and-serial">
+                                <h5>Raushon Ershad</h5>
+                                <h6>11th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-27.svg" class="img-fluid" /></div>
+                            <div class="opposition-leader-name-and-serial">
+                                <h5>Raushon Ershad</h5>
+                                <h6>10th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex name-and-image">
+                            <div class=""><img src="/assets/images/Ellipse-29.svg" class="img-fluid" /></div>
+                            <div class="opposition-leader-name-and-serial">
+                                <h5>Begum Khaleda Zia</h5>
+                                <h6>9th Parliament</h6>
+                            </div>
+                        </div>
+                        <div class="text-center my-1"><a href=""><button class="btn"><i
+                                        class="fa-solid fa-arrow-left"></i>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i></button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

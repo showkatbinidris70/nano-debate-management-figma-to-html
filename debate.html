@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" /> -->
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=East+Sea+Dokdo&family=Love+Ya+Like+A+Sister&family=Poppins:wght@100;200;300;400;500;600;900&family=Trykker&display=swap"
+        rel="stylesheet">
+    <title>Debate Management System</title>
+    <style>
+        .debate-manage-system {
+            width: 100%;
+            min-height: 30rem;
+            background-color: aliceblue;
+        }
+
+        .debate-manage-system-bg-image-left {
+            background-image: url("/assets/images/Rectangle-15.png");
+            min-height: 30rem;
+            background-size: cover;
+            background-repeat: no-repeat, repeat;
+            background-position: center;
+            background-color: #E4FFE7;
+        }
+
+        .debate-manage-system-bg-image-right {
+            background-image: url("/assets/images/Rectangle-24.png");
+            min-height: 30rem;
+            background-repeat: no-repeat, repeat;
+            background-position: right;
+            background-size: contain;
+        }
+
+        .debate-title {
+            color: #06380B;
+            text-align: center;
+            font-family: Adamina;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #AEC0B0 !important;
+            padding-top: 1rem;
+        }
+
+        .debate-title img {
+            margin-top: -2.8rem;
+        }
+
+        .debate-message p {
+            color: #1E1B1B;
+            text-align: justify;
+            font-family: Adamina;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 2.66px;
+            margin: 1.2rem;
+        }
+
+        .citizen-debate-title {
+            color: #D50606;
+            font-family: Adamina;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 1.5rem;
+        }
+
+        .citizen-debate-title img {
+            margin-top: -3rem;
+
+        }
+
+        .citizen-from {
+            padding-left: 1.5rem;
+            margin-top: -2rem;
+            width: 70%;
+            border-radius: none;
+
+        }
+
+        .citizen-from input {
+            color: #454537;
+            font-family: Adamina;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: none;
+        }
+
+        .citizen-from button {
+            border-radius: 9px;
+            border: 1px solid #05650E;
+            background: #0D4412;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- debate start -->
+    <div class="container-fluid">
+        <div class="debate-manage-system">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 px-0 debate-manage-system-bg-image-left">
+                    <div class="debate-title">
+                        <h4 class="text-center">About Debate Management System</h4>
+                        <img src="/assets/images/image-4.png" class="img-fluid" />
+                    </div>
+                    <div class="debate-message">
+                        <p>The Bangladesh Liberation War[a] (Bengali: মুক্তিযুদ্ধ
+                            Muktijuddho), also known as the Bangladesh War of Independence, or simply the Liberation War
+                            in Bangladesh, was a revolution and armed conflict sparked by the rise of the Bengali
+                            nationalist and self-determination movement in what was then East Pakistan during the 1971
+                            Bangladesh genocide. It resulted in the independence of the People's Republic of Bangladesh.
+                            The war began after the Pakistani military junta based in West Pakistan launched Operation
+                            Searchlight against the people of East Pakistan on the night of 25 March 1971. It pursued
+                            the systematic elimination of nationalist Bengali civilians, students, intelligentsia,
+                            religious minorities and armed personnel.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 debate-manage-system-bg-image-right py-0">
+                    <div class="citizen-debate-title">
+                        <h4 class="">Citizen Debate Request</h4>
+                        <img src="/assets/images/image-5.png" class="img-fluid" />
+                    </div>
+                    <div class="citizen-from">
+                        <form>
+                            <div class="mb-2">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    placeholder="Please write Your Name" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Please write Your Mobile No">
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Please write Your NID">
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Please write Your Address">
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Please write your Profession">
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Please write the debate you are requesting">
+                            </div>
+                            <div class="mb-2">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Please write Purpose in detail"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Submit Your Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- debate end -->
+
+    <!-- bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
